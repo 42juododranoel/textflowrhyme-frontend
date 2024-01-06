@@ -1,0 +1,44 @@
+{
+  "name": "textflowrhyme-frontend",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint:eslint": "eslint --ext \".ts,.vue\" .",
+    "lint:prettier": "prettier . --check",
+    "lint": "npm run lint:prettier && npm run lint:eslint",
+    "format:eslint": "eslint --ext \".ts,.vue\" . --fix",
+    "format:prettier": "prettier . --write",
+    "format": "npm run format:eslint && npm run format:prettier"
+  },
+  "devDependencies": {
+    "@nuxt/devtools": "latest",
+    "@nuxtjs/google-fonts": "^3.0.2",
+    "@pinia/nuxt": "^0.4.11",
+    "@tiptap/extension-hard-break": "^2.1.9",
+    "@tiptap/extension-history": "^2.1.10",
+    "@tiptap/pm": "^2.1.9",
+    "@tiptap/starter-kit": "^2.1.9",
+    "@tiptap/vue-3": "^2.1.9",
+    "@types/node": "^18.16.19",
+    "@typescript-eslint/eslint-plugin": "^6.4.0",
+    "@typescript-eslint/parser": "^6.4.0",
+    "eslint": "^8.47.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-vue": "^9.17.0",
+    "nuxt": "^3.6.3",
+    "nuxt-proxy": "^0.4.1",
+    "pinia": "^2.1.4",
+    "prettier": "3.0.2",
+    "typescript": "^4.9.5",
+  },
+  "overrides": {
+    "vue": "latest"
+  },
+  "dependencies": {
+    "@vueuse/core": "^10.7.1",
+  }
+}
