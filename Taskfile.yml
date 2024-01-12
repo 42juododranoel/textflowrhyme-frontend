@@ -1,4 +1,4 @@
-version: '3'
+version: "3"
 
 tasks:
   # The following commands are intended to be used during development and CI
@@ -21,7 +21,6 @@ tasks:
   lint:
     cmds:
       - task: lint:prettier
-
 
   # The following commands are intended to be run by Docker inside the container
 

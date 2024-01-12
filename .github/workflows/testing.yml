@@ -34,4 +34,4 @@ jobs:
 
       - name: Lint & Test
         run: |
-          docker run --rm ${{ env.TESTING_TAG }} start:testing      
+          docker run --rm ${{ env.TESTING_TAG }} start:testing

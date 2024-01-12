@@ -3,11 +3,10 @@ import Document from "@tiptap/extension-document"
 import Text from "@tiptap/extension-text"
 import { mergeAttributes, Mark } from "@tiptap/core"
 
-
 export const FatigueMark = Mark.create({
   name: "fatigue",
   renderHTML({ HTMLAttributes }) {
-    return ["span", {class: `editor--fatigue__value${HTMLAttributes.value}`}, 0]
+    return ["span", { class: `editor--fatigue__value${HTMLAttributes.value}` }, 0]
   },
   addAttributes() {
     return {
@@ -21,7 +20,7 @@ export const FatigueMark = Mark.create({
 export const LengthMark = Mark.create({
   name: "length",
   renderHTML({ HTMLAttributes }) {
-    return ["span", {class: `editor--sentence__length-${HTMLAttributes.value}`}, 0]
+    return ["span", { class: `editor--sentence__length-${HTMLAttributes.value}` }, 0]
   },
   addAttributes() {
     return {
