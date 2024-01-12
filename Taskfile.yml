@@ -27,12 +27,12 @@ tasks:
 
   build:testing:
     cmds:
-      - npm install
+      - npm install --include=dev
       - nuxt build
 
   build:deployment:
     cmds:
-      - npm install --omit=dev
+      - npm install
       - nuxt build
 
   start:testing:
