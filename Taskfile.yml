@@ -1,0 +1,45 @@
+version: '3'
+
+tasks:
+  # The following commands are intended to be used during development and CI
+
+  test:
+    cmds:
+
+  format:prettier:
+    cmds:
+      - prettier . --write
+
+  format:
+    cmds:
+      - task: format:prettier
+
+  lint:prettier:
+    cmds:
+      - prettier . --check
+
+  lint:
+    cmds:
+      - task: lint:prettier
+
+
+  # The following commands are intended to be run by Docker inside the container
+
+  build:testing:
+    cmds:
+      - npm install
+      - nuxt build
+
+  build:deployment:
+    cmds:
+      - npm install --omit=dev
+      - nuxt build
+
+  start:testing:
+    cmds:
+      - task: lint
+      - task: test
+
+  start:deployment:
+    cmds:
+      - node .output/server/index.mjs

@@ -23,10 +23,12 @@ export default defineNuxtConfig({
       link: [
         { rel: "stylesheet", href: "https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" },
         { rel: "stylesheet", href: "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" },
+        { rel: "stylesheet", href: "https://cdn.jsdelivr.net/gh/mdbassit/Coloris@latest/dist/coloris.min.css" },
       ],
       script: [
         { src: "https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" },
         { src: "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" },
+        { src: "https://cdn.jsdelivr.net/gh/mdbassit/Coloris@latest/dist/coloris.min.js" },
       ]
     },
   },

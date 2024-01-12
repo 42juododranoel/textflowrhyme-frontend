@@ -24,7 +24,7 @@
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="text-rewrite-settings-label">Text Rewrite Settings</h5>
+                <h5 class="modal-title" id="text-rewrite-settings-label">Rewrite Settings</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <!-- Text Rewrite Settings Modal Body -->
@@ -45,6 +45,7 @@
             </div>
           </div>
         </div>
+
       </div>
 
       <!-- Editor Progress -->
@@ -326,4 +327,10 @@ const editor = useEditor({
 .progress-bar {
   transition: none;
 }
+
+.modal {
+  --bs-modal-width: 700px;
+}
+
+
 </style>
