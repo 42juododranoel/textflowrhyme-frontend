@@ -1,28 +1,32 @@
 version: "3"
 
 tasks:
-  # The following commands are intended to be used during development and CI
+  # Development & CI
+
+  run:
+    cmds:
+      - nuxt dev
 
   test:
     cmds:
 
-  format:prettier:
+  format:xo:
     cmds:
-      - prettier . --write
+      - xo --fix --prettier
 
   format:
     cmds:
-      - task: format:prettier
+      - task: format:xo
 
-  lint:prettier:
+  lint:xo:
     cmds:
-      - prettier . --check
+      - xo
 
   lint:
     cmds:
-      - task: lint:prettier
+      - task: lint:xo
 
-  # The following commands are intended to be run by Docker inside the container
+  # Docker
 
   build:testing:
     cmds:
@@ -42,3 +46,9 @@ tasks:
   start:deployment:
     cmds:
       - node .output/server/index.mjs
+
+  # Convenience
+
+  install:taskfile:
+    cmds:
+      - sh -c "$(curl --location https://taskfile.dev/install.sh)" -- -d
