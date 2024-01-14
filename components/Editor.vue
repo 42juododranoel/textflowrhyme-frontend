@@ -90,7 +90,7 @@
                           v-model="rewrite_togetherai_api_key"
                         />
                         <div id="togetherai-apikey-help" class="form-text">
-                          Transmitted with HTTPS, not stored anywhere beyond your local device.
+                          Transmitted in POST data via HTTPS, not stored anywhere beyond your current browser.<br />Used only when you click on “Rewrite”.
                         </div>
                       </div>
                     </div>

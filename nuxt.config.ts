@@ -1,3 +1,5 @@
+import process from 'node:process';
+
 export default defineNuxtConfig({
 	pages: true,
 
@@ -23,6 +25,7 @@ export default defineNuxtConfig({
 		head: {
 			charset: 'utf8',
 			viewport: 'width=device-width, initial-scale=1',
+			title: 'Textflowrhyme',
 			link: [
 				{
 					rel: 'stylesheet',
@@ -53,7 +56,10 @@ export default defineNuxtConfig({
 
 	proxy: {
 		options: {
-			target: 'http://127.0.0.1:8000/',
+			target:
+				process.env.NODE_ENV === 'production'
+					? 'https://textflowrhy.me'
+					: 'http://127.0.0.1:8000/',
 			changeOrigin: true,
 			pathFilter: [
 				'/api/v1.0.0/documents/analyze',
