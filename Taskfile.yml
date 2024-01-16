@@ -28,9 +28,12 @@ tasks:
 
   # Docker
 
-  build:testing:
+  build:testing:precopy:
     cmds:
       - npm install --include=dev
+
+  build:testing:postcopy:
+    cmds:
       - nuxt build
 
   build:deployment:precopy:
