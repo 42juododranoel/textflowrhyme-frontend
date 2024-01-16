@@ -33,9 +33,12 @@ tasks:
       - npm install --include=dev
       - nuxt build
 
-  build:deployment:
+  build:deployment:precopy:
     cmds:
       - npm install
+
+  build:deployment:postcopy:
+    cmds:
       - nuxt build
 
   start:testing:

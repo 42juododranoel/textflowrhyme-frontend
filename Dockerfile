@@ -62,9 +62,11 @@ WORKDIR /app
 COPY Taskfile.yml package.json package-lock.json ./
 
 # Install dependencies
-RUN task build:${TARGET}
+RUN task build:${TARGET}:precopy
 
-# Copy project into user folder
+# Copy project into user folder and build Node server
 WORKDIR /app
 COPY . /app
+RUN task build:${TARGET}:postcopy
+
 USER node
