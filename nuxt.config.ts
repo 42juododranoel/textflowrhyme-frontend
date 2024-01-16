@@ -58,7 +58,7 @@ export default defineNuxtConfig({
 		options: {
 			target:
 				process.env.NODE_ENV === 'production'
-					? 'https://textflowrhy.me'
+					? 'https://backend.textflowrhy.me'
 					: 'http://127.0.0.1:8000/',
 			changeOrigin: true,
 			pathFilter: [
