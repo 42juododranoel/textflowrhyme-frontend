@@ -10,21 +10,31 @@ tasks:
   test:
     cmds:
 
-  format:xo:
+  format:prettier:
     cmds:
-      - xo --fix --prettier
+      - prettier --write .
 
   format:
     cmds:
-      - task: format:xo
+      - task: format:prettier
 
-  lint:xo:
+  lint:prettier:
     cmds:
-      - xo
+      - prettier --check .
+
+  lint:eslint:
+    cmds:
+      - eslint . --fix
+
+  lint:typescript:
+    cmds:
+      - vue-tsc
 
   lint:
     cmds:
-      - task: lint:xo
+      - task: lint:prettier
+      - task: lint:eslint
+      - task: lint:typescript
 
   # Docker
 
