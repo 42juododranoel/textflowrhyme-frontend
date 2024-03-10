@@ -1,0 +1,54 @@
+nav {
+  align-items: baseline;
+  display: flex;
+  font-weight: bold;
+  justify-content: space-between;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 var(--space-half);
+  position: relative;
+  text-align: left;
+}
+
+// Dropdown
+
+nav ul li:hover ul {
+  display: block;
+}
+
+nav ul li ul {
+  background: var(--color-background);
+  border: 1px solid var(--color-background-secondary);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow) var(--color-shadow);
+  display: none;
+  height: auto;
+  left: -2px;
+  position: absolute;
+  white-space: nowrap;
+  width: auto;
+  z-index: 1;
+  // padding: .5rem 1rem;
+  // top: 1.7rem;
+}
+
+nav ul li ul::before {
+  // Fill gap above to make mousing easier
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -0.5rem;
+  height: 0.5rem;
+}
+
+nav ul li ul li,
+nav ul li ul li a {
+  display: block;
+}

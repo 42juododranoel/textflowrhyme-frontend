@@ -1,0 +1,25 @@
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-family-sans);
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  text-align: left;
+}
+
+[contenteditable] {
+  outline: 0px solid transparent;
+}
