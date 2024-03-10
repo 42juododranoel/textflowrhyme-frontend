@@ -1,9 +1,12 @@
 import { defineStore } from "pinia";
-import { BookId } from "~/types/models/book";
-import { PageId } from "~/types/models/page";
-import { BookUpdatePayload } from "~/types/payloads/book";
-import { PageCreatePayload, PageUpdatePayload } from "~/types/payloads/page";
-import { BookResult } from "~/types/results/book";
+import { type BookId } from "~/types/models/book";
+import { type PageId } from "~/types/models/page";
+import { type BookUpdatePayload } from "~/types/payloads/book";
+import {
+  type PageCreatePayload,
+  type PageUpdatePayload,
+} from "~/types/payloads/page";
+import { type BookResult } from "~/types/results/book";
 
 export const useEditor = defineStore("editor", {
   state: () => ({

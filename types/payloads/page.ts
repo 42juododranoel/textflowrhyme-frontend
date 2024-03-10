@@ -1,5 +1,5 @@
-import { PageContent } from "~/types/models/page";
-import { BookId } from "~/types/models/book";
+import { type PageContent } from "~/types/models/page";
+import { type BookId } from "~/types/models/book";
 
 export type PageUpdatePayload = {
   content: PageContent;

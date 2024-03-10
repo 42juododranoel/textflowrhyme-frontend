@@ -1,4 +1,4 @@
-import { BookTitle } from "~/types/models/book";
+import { type BookTitle } from "~/types/models/book";
 
 export type BookCreatePayload = {
   title: BookTitle;

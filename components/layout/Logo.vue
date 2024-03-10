@@ -1,5 +1,5 @@
 <template>
-  <Ahref class="logo" target="/" do_underline="false">Textflowrhy.me</Ahref>
+  <Ahref class="logo" target="/" :do_underline="false">Textflowrhy.me</Ahref>
 </template>
 
 <style lang="scss" scoped>

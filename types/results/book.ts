@@ -1,5 +1,5 @@
-import { BookId, BookTitle } from "~/types/models/book";
-import { PageResult } from "~/types/results/page";
+import { type BookId, type BookTitle } from "~/types/models/book";
+import { type PageResult } from "~/types/results/page";
 
 export type BookResult = {
   id: BookId;

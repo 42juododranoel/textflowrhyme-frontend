@@ -1,6 +1,6 @@
 import { defineStore } from "pinia";
-import { BookId } from "~/types/models/book";
-import { BookResult } from "~/types/results/book";
+import { type BookId } from "~/types/models/book";
+import { type BookResult } from "~/types/results/book";
 
 export const useReader = defineStore("reader", {
   state: () => ({

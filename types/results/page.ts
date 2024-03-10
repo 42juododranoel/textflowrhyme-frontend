@@ -1,4 +1,4 @@
-import { PageId, PageContent } from "~/types/models/page";
+import { type PageId, type PageContent } from "~/types/models/page";
 
 export type PageResult = {
   id: PageId;

@@ -1,11 +1,20 @@
 import { defineStore } from "pinia";
 
-import { BookId } from "~/types/models/book";
+import { type BookId } from "~/types/models/book";
 
-import { PageId } from "~/types/models/page";
-import { PageCreatePayload, PageUpdatePayload } from "~/types/payloads/page";
-import { BookCreatePayload, BookUpdatePayload } from "~/types/payloads/book";
-import { BookCollectionResult, BookInstanceResult } from "~/types/results/book";
+import { type PageId } from "~/types/models/page";
+import {
+  type PageCreatePayload,
+  type PageUpdatePayload,
+} from "~/types/payloads/page";
+import {
+  type BookCreatePayload,
+  type BookUpdatePayload,
+} from "~/types/payloads/book";
+import {
+  type BookCollectionResult,
+  type BookInstanceResult,
+} from "~/types/results/book";
 
 export const useApi = defineStore("api", {
   actions: {

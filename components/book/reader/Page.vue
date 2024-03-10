@@ -8,7 +8,7 @@
 </template>
 
 <script setup lang="ts">
-import { PageResult } from "~/types/results/page";
+import { type PageResult } from "~/types/results/page";
 import { EditorContent } from "@tiptap/vue-3";
 import { Editor } from "@tiptap/vue-3";
 import { EXTENSIONS } from "~/utils/editor/constants";

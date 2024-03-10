@@ -37,7 +37,7 @@
 </template>
 
 <script setup lang="ts">
-import { BookResult } from "~/types/results/book";
+import { type BookResult } from "~/types/results/book";
 
 // Stores
 

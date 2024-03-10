@@ -10,7 +10,7 @@
 </template>
 
 <script setup lang="ts">
-import { PageResult } from "~/types/results/page";
+import { type PageResult } from "~/types/results/page";
 import { Editor, EditorContent } from "@tiptap/vue-3";
 import { InstanceUpdater } from "~/utils/instance_updater";
 import { EXTENSIONS } from "~/utils/editor/constants";
