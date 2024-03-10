@@ -1,0 +1,315 @@
+/* MVP.css v1.14 - https://github.com/andybrewer/mvp */
+
+/* Layout */
+article aside {
+  background: var(--color-secondary-accent);
+  border-left: 4px solid var(--color-secondary);
+  padding: 0.01rem 0.8rem;
+}
+
+[hidden] {
+  display: none;
+}
+
+/* Headers */
+article header,
+div header,
+main header {
+  padding-top: 0;
+}
+
+header a b,
+header a em,
+header a i,
+header a strong {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+section header {
+  padding-top: 0;
+  width: 100%;
+}
+
+/* Typography */
+code,
+samp {
+  background-color: var(--color-accent);
+  border-radius: var(--border-radius);
+  color: var(--color-text);
+  display: inline-block;
+  margin: 0 0.1rem;
+  padding: 0 0.5rem;
+}
+
+details {
+  margin: 1.3rem 0;
+}
+
+details summary {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+mark {
+  padding: 0.1rem;
+}
+
+ol li,
+ul li {
+  padding: 0.2rem 0;
+}
+
+// p {
+//     margin: 0.75rem 0;
+//     padding: 0;
+//     margin: 0;
+//     width: 100%;
+// }
+
+pre {
+  margin: 1rem 0;
+  max-width: var(--width-card-wide);
+  padding: 1rem 0;
+}
+
+pre code,
+pre samp {
+  display: block;
+  max-width: var(--width-card-wide);
+  padding: 0.5rem 2rem;
+  white-space: pre-wrap;
+}
+
+small {
+  color: var(--color-text-secondary);
+}
+
+sup {
+  background-color: var(--color-secondary);
+  border-radius: var(--border-radius);
+  color: var(--color-background);
+  font-size: xx-small;
+  font-weight: bold;
+  margin: 0.2rem;
+  padding: 0.2rem 0.3rem;
+  position: relative;
+  top: -2px;
+}
+
+/* Links */
+// a {
+//     color: var(--color-link);
+//     display: inline-block;
+//     font-weight: bold;
+//     text-decoration: underline;
+// }
+
+// a:active {
+//     filter: brightness(var(--active-brightness));
+// }
+
+// a:hover {
+//     filter: brightness(var(--hover-brightness));
+// }
+
+// a b,
+// a em,
+// a i,
+// a strong,
+// button,
+// input[type="submit"] {
+//     border-radius: var(--border-radius);
+//     display: inline-block;
+//     font-size: medium;
+//     font-weight: bold;
+//     line-height: var(--line-height);
+//     margin: 0.5rem 0;
+//     padding: 1rem 2rem;
+// }
+
+button,
+input[type="submit"] {
+  font-family: var(--font-family-sans);
+}
+
+button:active,
+input[type="submit"]:active {
+  filter: brightness(var(--active-brightness));
+}
+
+button:hover,
+input[type="submit"]:hover {
+  cursor: pointer;
+  filter: brightness(var(--hover-brightness));
+}
+
+// a b,
+// a strong,
+// button,
+// input[type="submit"] {
+//     background-color: var(--color-link);
+//     border: 2px solid var(--color-link);
+//     color: var(--color-background);
+// }
+
+// a em,
+// a i {
+//     border: 2px solid var(--color-link);
+//     border-radius: var(--border-radius);
+//     color: var(--color-link);
+//     display: inline-block;
+//     padding: 1rem 2rem;
+// }
+
+// article aside a {
+//     color: var(--color-secondary);
+// }
+
+/* Images */
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+figure img {
+  max-width: 100%;
+}
+
+figure figcaption {
+  color: var(--color-text-secondary);
+}
+
+/* Forms */
+button:disabled,
+input:disabled {
+  background: var(--color-background-secondary);
+  border-color: var(--color-background-secondary);
+  color: var(--color-text-secondary);
+  cursor: not-allowed;
+}
+
+button[disabled]:hover,
+input[type="submit"][disabled]:hover {
+  filter: none;
+}
+
+form {
+  border: 1px solid var(--color-background-secondary);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow) var(--color-shadow);
+  display: block;
+  max-width: var(--width-card-wide);
+  min-width: var(--width-card);
+  padding: 1.5rem;
+  text-align: var(--justify-normal);
+}
+
+form header {
+  margin: 1.5rem 0;
+  padding: 1.5rem 0;
+}
+
+input,
+label,
+select,
+textarea {
+  display: block;
+  font-size: inherit;
+  max-width: var(--width-card-wide);
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline-block;
+}
+
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+  display: inline-block;
+  font-weight: normal;
+  position: relative;
+  top: 1px;
+}
+
+input[type="range"] {
+  padding: 0.4rem 0;
+}
+
+input,
+select,
+textarea {
+  border: 1px solid var(--color-background-secondary);
+  border-radius: var(--border-radius);
+  margin-bottom: 1rem;
+  padding: 0.4rem 0.8rem;
+}
+
+input[type="text"],
+textarea {
+  width: calc(100% - 1.6rem);
+}
+
+input[readonly],
+textarea[readonly] {
+  background-color: var(--color-background-secondary);
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 0.2rem;
+}
+
+/* Popups */
+dialog {
+  border: 1px solid var(--color-background-secondary);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow) var(--color-shadow);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  z-index: 999;
+}
+
+/* Tables */
+
+/* Quotes */
+blockquote {
+  display: block;
+  font-size: x-large;
+  line-height: var(--line-height);
+  margin: 1rem auto;
+  max-width: var(--width-card-medium);
+  padding: 1.5rem 1rem;
+  text-align: var(--justify-important);
+}
+
+blockquote footer {
+  color: var(--color-text-secondary);
+  display: block;
+  font-size: small;
+  line-height: var(--line-height);
+  padding: 1.5rem 0;
+}
+
+/* Scrollbars */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(202, 202, 232) auto;
+}
+
+*::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(202, 202, 232);
+  border-radius: 10px;
+}

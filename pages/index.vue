@@ -1,5 +1,5 @@
 <template>
-  <Editor />
+  <main>landing page work in progress</main>
 </template>
 
-<script setup lang="ts" />
+<script setup lang="ts"></script>

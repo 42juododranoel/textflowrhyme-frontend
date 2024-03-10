@@ -1,7 +1,7 @@
 version: "3"
 
-# This file is only there for developer convenience,
-# it is not used in testing or deployments
+# This file is only there for developer convenience
+# and should not be used for deployments.
 
 x-nuxt: &nuxt
   build:

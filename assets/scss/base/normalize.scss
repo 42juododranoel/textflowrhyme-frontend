@@ -1,0 +1,39 @@
+// Links
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+// Images
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+// Rulers
+
+hr {
+  font-size: 0;
+  line-height: 0;
+  height: 0;
+  color: transparent;
+}
+
+// Figures
+
+figure {
+  margin: unset;
+}
+
+// Preformatted
+
+pre {
+  white-space: unset;
+}

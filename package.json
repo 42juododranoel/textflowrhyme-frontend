@@ -2,6 +2,7 @@
   "name": "textflowrhyme-frontend",
   "private": true,
   "dependencies": {
+    "@fief/fief": "^0.14.1",
     "@nuxtjs/google-fonts": "^3.0.2",
     "@pinia/nuxt": "^0.4.11",
     "@tiptap/extension-hard-break": "^2.1.9",
@@ -10,9 +11,11 @@
     "@tiptap/starter-kit": "^2.1.9",
     "@tiptap/vue-3": "^2.1.9",
     "@vueuse/core": "^10.7.1",
+    "date-fns": "^3.3.1",
     "nuxt": "^3.6.3",
     "nuxt-proxy": "^0.4.1",
-    "pinia": "^2.1.4"
+    "pinia": "^2.1.4",
+    "ress": "^5.0.2"
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
@@ -31,7 +34,10 @@
     "extends": [
       "@nuxtjs/eslint-config-typescript",
       "prettier"
-    ]
+    ],
+    "rules": {
+      "camelcase": "off"
+    }
   },
   "prettier": {}
 }

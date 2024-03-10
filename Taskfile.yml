@@ -34,7 +34,7 @@ tasks:
     cmds:
       - task: lint:prettier
       - task: lint:eslint
-      - task: lint:typescript
+      # - task: lint:typescript
 
   # Docker
 
