@@ -12,9 +12,14 @@ import {
   type BookUpdatePayload,
 } from "~/types/payloads/book";
 import {
-  type BookCollectionResult,
   type BookInstanceResult,
+  type BookCollectionResult,
 } from "~/types/results/book";
+import {
+  type RegisterPayload,
+  type LoginPayload,
+} from "~/types/payloads/authentication";
+import { type LoginResult } from "~/types/results/authentication";
 
 export const useApi = defineStore("api", {
   actions: {
@@ -54,6 +59,28 @@ export const useApi = defineStore("api", {
       return await $fetch(`/api/v1.0.0/pages/${page_id}`, {
         method: "PATCH",
         body: payload,
+      });
+    },
+    // Authentication
+    async register(payload: RegisterPayload) {
+      return await $fetch(`/api/v1.0.0/authentication/register`, {
+        method: "POST",
+        body: payload,
+      });
+    },
+    async login(payload: LoginPayload) {
+      const form_data = new FormData();
+      form_data.append("username", payload.username);
+      form_data.append("password", payload.password);
+
+      return await $fetch<LoginResult>(`/api/v1.0.0/authentication/jwt/login`, {
+        method: "POST",
+        body: form_data,
+      });
+    },
+    async logout() {
+      return await $fetch(`/api/v1.0.0/authentication/jwt/logout`, {
+        method: "POST",
       });
     },
   },

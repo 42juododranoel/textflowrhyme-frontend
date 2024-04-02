@@ -2,7 +2,6 @@
   "name": "textflowrhyme-frontend",
   "private": true,
   "dependencies": {
-    "@fief/fief": "^0.14.1",
     "@nuxtjs/google-fonts": "^3.0.2",
     "@pinia/nuxt": "^0.4.11",
     "@tiptap/extension-hard-break": "^2.1.9",
