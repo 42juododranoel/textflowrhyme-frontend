@@ -7,7 +7,4 @@
 
 <script setup lang="ts">
 const is_unauthenticated = ref(true);
-
-const authentication = useAuthentication();
-authentication.sign_out();
 </script>

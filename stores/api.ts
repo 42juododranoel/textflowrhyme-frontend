@@ -11,7 +11,10 @@ import {
   type BookCreatePayload,
   type BookUpdatePayload,
 } from "~/types/payloads/book";
-import { type BookInstanceResult, type BookCollectionResult } from "~/types/results/book";
+import {
+  type BookInstanceResult,
+  type BookCollectionResult,
+} from "~/types/results/book";
 import {
   type RegisterPayload,
   type LoginPayload,
