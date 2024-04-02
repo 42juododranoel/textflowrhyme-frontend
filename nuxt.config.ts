@@ -5,7 +5,6 @@ export default defineNuxtConfig({
 
   modules: [
     "@pinia/nuxt",
-    "@sidebase/nuxt-auth",
     [
       "@nuxtjs/google-fonts",
       {
