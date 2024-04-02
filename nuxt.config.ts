@@ -5,6 +5,7 @@ export default defineNuxtConfig({
 
   modules: [
     "@pinia/nuxt",
+    "@sidebase/nuxt-auth",
     [
       "@nuxtjs/google-fonts",
       {
@@ -47,6 +48,10 @@ export default defineNuxtConfig({
         "/api/v1.0.0/texts/rewrite",
         "/api/v1.0.0/books",
         "/api/v1.0.0/pages",
+        "/api/v1.0.0/authentication/jwt/login",
+        "/api/v1.0.0/authentication/jwt/logout",
+        "/api/v1.0.0/authentication/register",
+        "/api/v1.0.0/users/me",
       ],
     },
   },

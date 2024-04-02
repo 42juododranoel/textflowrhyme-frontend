@@ -2,7 +2,6 @@
   "name": "textflowrhyme-frontend",
   "private": true,
   "dependencies": {
-    "@fief/fief": "^0.14.1",
     "@nuxtjs/google-fonts": "^3.0.2",
     "@pinia/nuxt": "^0.4.11",
     "@tiptap/extension-hard-break": "^2.1.9",
@@ -20,6 +19,7 @@
   "devDependencies": {
     "@nuxt/devtools": "latest",
     "@nuxtjs/eslint-config-typescript": "^12.1.0",
+    "@sidebase/nuxt-auth": "^0.7.0",
     "eslint": "^8.56.0",
     "eslint-config-prettier": "^9.1.0",
     "prettier": "3.2.5",
