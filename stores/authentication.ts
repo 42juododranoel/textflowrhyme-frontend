@@ -20,24 +20,10 @@ export const useAuthentication = defineStore("authentication", {
       await this.sign_in(login_payload);
     },
     async sign_in(payload: LoginPayload) {
-      const api = useApi();
-      const { getSession } = useAuth();
-      const { setToken } = useAuthState();
-
-      // Do login & update session
-      const response = await api.login(payload);
-      setToken(response.access_token);
-      await getSession();
+      console.log("sign_in will be there", payload);
     },
     async sign_out() {
-      const api = useApi();
-      const { getSession } = useAuth();
-      const { clearToken } = useAuthState();
-
-      // Do logout & update session
-      await api.logout();
-      clearToken();
-      await getSession();
+      console.log("sign_out will be there");
     },
   },
 });

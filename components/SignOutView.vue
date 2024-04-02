@@ -6,8 +6,7 @@
 </template>
 
 <script setup lang="ts">
-const { status } = useAuth();
-const is_unauthenticated = ref(status.value == "unauthenticated");
+const is_unauthenticated = ref(true);
 
 const authentication = useAuthentication();
 authentication.sign_out();

@@ -19,11 +19,9 @@
 </template>
 
 <script setup lang="ts">
-const { status, data } = useAuth();
-
-const is_authenticated = ref(status.value == "authenticated");
-const is_unauthenticated = ref(status.value == "unauthenticated");
-const email = ref(data && data.value ? data.value.email : "");
+const is_authenticated = ref(false);
+const is_unauthenticated = ref(true);
+const email = ref("foobar@foo.bar");
 </script>
 
 <style lang="scss" scoped>

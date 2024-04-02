@@ -11,7 +11,7 @@ import {
   type BookCreatePayload,
   type BookUpdatePayload,
 } from "~/types/payloads/book";
-import { type BookInstanceResult } from "~/types/results/book";
+import { type BookInstanceResult, type BookCollectionResult } from "~/types/results/book";
 import {
   type RegisterPayload,
   type LoginPayload,
@@ -20,14 +20,6 @@ import { type LoginResult } from "~/types/results/authentication";
 
 export const useApi = defineStore("api", {
   actions: {
-    // Base
-    async request(method, path, body = undefined) {
-      const token = "42";
-      const headers = {
-        Authorization: `Bearer ${token}`,
-      };
-      return await $fetch(path, { method, headers, body });
-    },
     // Books
     async delete_book(book_id: BookId) {
       return await $fetch(`/api/v1.0.0/books/${book_id}`, { method: "DELETE" });
@@ -45,7 +37,7 @@ export const useApi = defineStore("api", {
       });
     },
     async list_books() {
-      return await this.request("GET", "/api/v1.0.0/books");
+      return await $fetch<BookCollectionResult>("/api/v1.0.0/books");
     },
     async retrieve_book(book_id: BookId) {
       return await $fetch<BookInstanceResult>(`/api/v1.0.0/books/${book_id}`);
